@@ -1,3 +1,4 @@
+import 'package:filo_demo/constants/text_styles.dart';
 import 'package:filo_demo/screens/catalog_screen.dart';
 import 'package:flutter/material.dart';
 
@@ -14,11 +15,8 @@ class SplashScreen extends StatelessWidget {
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
               Text('Filo Assignment',
-              style: TextStyle(
-                fontSize: 30.0,
-                fontWeight: FontWeight.bold
-              ),),
-              Text('-by Shantanu Gupta'),
+              style: KPrimaryHeadingTextStyle,),
+              Text('-by Shantanu Gupta',style: KGenericTextStyle,),
               SizedBox(
                 height: 20.0,
               ),
