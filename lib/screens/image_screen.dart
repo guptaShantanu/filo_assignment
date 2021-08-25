@@ -47,7 +47,7 @@ class _ImageScreenState extends State<ImageScreen> {
                 ),
               )),
           Positioned(
-            bottom: 10.0,
+            bottom: 20.0,
             left: 10.0,
             right: 10.0,
             child: BottomOptionBar(),
