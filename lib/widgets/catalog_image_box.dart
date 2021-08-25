@@ -26,21 +26,18 @@ class CatalogImageBox extends StatelessWidget {
             offset: Offset(3, -3),
             color: Colors.black.withOpacity(0.2))
       ]),
-      child: Expanded(
-        flex: 8,
-        child: Container(
-          decoration: BoxDecoration(),
-          child: CachedNetworkImage(
-            imageUrl: image.imageUrl,
-            placeholder: (context, url) =>
-                Center(child: new CupertinoActivityIndicator()),
-            errorWidget: (context, url, error) {
-              print("Error");
-              onError();
-              return Icon(Icons.error);
-            },
-            fit: BoxFit.cover,
-          ),
+      child: Container(
+        decoration: BoxDecoration(),
+        child: CachedNetworkImage(
+          imageUrl: image.imageUrl,
+          placeholder: (context, url) =>
+              Center(child: new CupertinoActivityIndicator()),
+          errorWidget: (context, url, error) {
+            print("Error");
+            onError();
+            return Icon(Icons.error);
+          },
+          fit: BoxFit.cover,
         ),
       ),
     );
